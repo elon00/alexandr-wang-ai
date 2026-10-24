@@ -1,0 +1,54 @@
+{
+  "name": "alexandr-wang-ai-mcp",
+  "version": "1.0.0",
+  "description": "Alexandr Wang AI Model Context Protocol Server for Autonomous Foundational Data Foundry, RLHF Synthetic Data Generation, Defense AI Readiness & Enterprise Ground-Truth Protocol",
+  "tools": [
+    {
+      "name": "audit_data_provenance_and_quality",
+      "description": "Benchmark training dataset signal-to-noise ratios, evaluate RLHF reward model label consensus, and detect synthetic data contamination",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "dataset_id": {
+            "type": "string"
+          },
+          "annotation_density": {
+            "type": "string"
+          },
+          "provenance_signature": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "dataset_id"
+        ]
+      }
+    },
+    {
+      "name": "disburse_data_foundry_grant",
+      "description": "Trigger automated micro-escrow funding for verified expert annotator pools, national security red-teaming benchmarks, and sovereign domain-specific dataset generation",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
